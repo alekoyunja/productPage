@@ -1,6 +1,6 @@
 import Counter from "../Counter";
-import ProductInfo from "./productInfo";
-import "./productItem.css";
+import ProductInfo from "./ProductInfo";
+import "./ProductItem.css";
 import { useState } from "react";
 
 const ProductItem=({ product })=> {

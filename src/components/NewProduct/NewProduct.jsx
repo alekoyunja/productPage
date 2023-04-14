@@ -1,11 +1,16 @@
 import ProductForm from "./ProductForm";
 
-const NewProduct = () => {
+const NewProduct = ({products, setProducts }) => {
+  const onSaveProduct = (newProductData) => {
+    setProducts((prevState) => [newProductData, ...prevState]);
+    
+  };
+
   return (
     <div className="new-product-wrapper">
-        <ProductForm/>
+      <ProductForm onSaveProduct={onSaveProduct} products={products} />
     </div>
-  )
-}
+  );
+};
 
-export default NewProduct
+export default NewProduct;

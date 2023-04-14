@@ -1,25 +1,15 @@
-import ProductItem from './components/Products/ProductsItem';
-import './App.css';
-import Products from './components/Products/products.jsx';
-import Counter from './components/Counter';
-import { useState } from 'react';
 
+import './App.css';
+import Products from './components/Products/Products.jsx';
 
 
 const App=()=> {
-  const [counter,setCounter]=useState(0);
 
   return (
     <div className="App">
         
      <Products/>
-    <Counter
-    counter={counter} 
-    setCounter={setCounter}
-    productPrice={counter}
-    >
-      {counter}
-   </Counter>
+  
     </div>
   );
 }
