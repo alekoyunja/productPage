@@ -26,9 +26,14 @@
   }
   
   .product-form button {
-    flex-basis: 100%;
+    
     margin-top: 10px;
     height: 30px;
+  }
+
+  .product-form button.cancel{
+    background-color: rgba(194, 26, 26, 0.87);
+
   }
   
   .product-form .product-form-input {
@@ -37,3 +42,9 @@
     align-items: flex-start;
   }
   
+  .form-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-basis: 100%;
+  }
